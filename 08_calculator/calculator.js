@@ -30,12 +30,23 @@ const multiply = function(array) {
 
 // iterate as many times as they are variables
 
-const power = function() {
-	
+const power = function(a, b) {
+  return a ** b
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  let newArray = [];
+  for (let i = 1; i <= a; i++) {
+    newArray.push(i);
+  }
+	if (newArray.length === 0 || newArray.length === 1) {
+    return 1
+  } else {
+    let x = (newArray[0] * newArray[1]);
+  if (newArray.length >= 3) {
+    for (let i = 2; i <= (newArray.length - 1); i++) {
+      x *= newArray[i];
+  }} return x }
 };
 
 // Do not edit below this line
